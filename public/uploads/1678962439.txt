@@ -1,0 +1,34 @@
+Créer la liste des objets suivants:
+- la table examen1.nombres1 contenant 100 valeurs entières (1 à 100 )
+- la table examen2.nombres2 contenant 200  valeurs entières (101 à 200)
+- la vue examen3.pairs3 contenant les valeurs paires de examen1.nombres1 et examen2.nombres2
+- la vue examen4.impairs4 contenant les valeurs impaires de examen1.nombres1
+
+Créer un utilisateur examen5 pouvant accéder à tous les objets des utilsateurs examenX.
+
+Les objets de examenX seront contenus dans un tablespace nommé examenX de taille égale à 20Mo.
+
+Vous vous aiderez des commandes sql suivantes pour la création des tables et leur emplissage.
+
+create table nombres (val number) tablespace test;
+
+
+BEGIN
+   FOR i IN 1..500 LOOP
+               INSERT INTO nombres VALUES (i);
+   END LOOP;
+   COMMIT;
+END;
+/
+
+
+Dans la machine virtuelle quelle est la valeurs des paramètres de base de données suivants:
+aq_tm_processes
+background_dump_dest
+user_dump_dest
+
+créer un listener écoutant sur le port 2048 
+
+
+
+
